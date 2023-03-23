@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Gallery</title>
+        <script src="js/app.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <section class="gallery">
+                <div class="frame">
+                    <div class="frame-grox">
+                        <h2>Style is the answer to everything</h2>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <div class="frame-grox">
+                        <div class="frame-nkar frame-left" style="background-image: url(materials/images/22.jpg);"></div>
+                    </div>
+                </div>
+
+                <div class="frame frame-txt">
+                    <div class="frame-grox">
+                        <div class="frame-nkar frame-right" style="background-image: url(materials/images/9.jpg);"></div>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <div class="frame-grox">
+                        <h2>A fresh way to approach a dull or dangerous thing</h2> 
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <div class="frame-grox">
+                        <video class="frame-nkar frame-right" src="materials/videos/video1.mp4" autoplay loop muted></video>
+                    </div>
+                </div>
+
+                <div class="frame frame-txt">
+                    <div class="frame-grox frame-left">
+                        <div class="frame-nkar frame-left" style="background-image: url(materials/images/16.jpg);"></div>
+                    </div>
+                </div>
+
+                <div class="frame frame-txt">
+                    <div class="frame-grox">
+                        <h2>To do a dangerous thing with style is what I call art.</h2>
+                    </div>
+                </div>
+
+                <div class="frame frame-txt">
+                    <div class="frame-grox">
+                        <div class="frame-nkar frame-right" style="background-image: url(materials/images/12.jpg);"></div>
+                        <p class="text-right">
+                            Bullfighting can be an art,<br>
+                            Boxing can be an art
+                        </p>
+                    </div>
+                </div>
+
+                <div class="frame frame-txt">
+                    <div class="frame-grox">
+                        <h2>
+                            Loving can be an art,<br>
+                            Opening a can of sardines can be an art.
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="frame frame-txt">
+                    <div class="frame-grox">
+                        <p>
+                            &copy <b id="date"></b> Arseni A. Mkrtumian. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <img src="materials/audio-img/sound.gif" class="soundBut paused">
+        <audio src="materials/audio/videoplayback.mp3" class="audio" loop></audio>
+        <script>
+            let curDate = new Date(),
+                year = curDate.getFullYear(),
+                date = document.getElementById('date');
+            date.innerHTML = year;
+        </script>
+    </body>
+</html>
